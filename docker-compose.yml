@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nuxt:
+    build: .
+    tty: true
+    volumes:
+      - ./:/app
+      - node_modules_volume:/app/node_modules
+    ports:
+      - 3000:3000
+    environment:
+      - HOST=0.0.0.0
+      # Docker用にpollingの設定。ファイルを書き換えた時のブラウザ自動更新を有効化
+      - CHOKIDAR_USEPOLLING=true
+    command: bash -c -x "/bin/bash"
+volumes:
+  node_modules_volume:
