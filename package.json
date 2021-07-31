@@ -21,11 +21,15 @@
     "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/dotenv": "^1.4.1",
+    "child_process": "^1.0.2",
     "core-js": "^3.15.1",
     "firebase-tools": "^9.16.0",
+    "googleapis": "^82.0.0",
+    "http2": "^3.3.7",
     "nuxt": "^2.15.7",
     "vue-gapi": "^1.1.0",
-    "vuetify": "^2.5.5"
+    "vuetify": "^2.5.5",
+    "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
